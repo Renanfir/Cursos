@@ -2,16 +2,25 @@ import re
 
 senha = "aB1234567"
 
-if len(senha) < 8 :
+
+
+
+# Verifica se a senha é maior do que 8 digitos,
+if len(senha) < 8:
     print('8 caracteres')
 
-if not re.search(r'[A-Z]',senha):
+# se contem uma letra maiuscula
+if not re.search(r'[A-Z]', senha):
     print('Senha deve ter pelo menos 1 letra maiuscula')
 
-if not re.search(r'[a-z]',senha):
+
+# se contem uma letra minuscula
+if not re.search(r'[a-z]', senha):
     print('Senha deve ter pelo menos 1 letra minuscula')
 
-if not re.search(r'[0-9]',senha):
+
+# se contem um numero
+if not re.search(r'[0-9]', senha):
     print('Senha deve ter pelo menos 1 numero')
 
 else:
